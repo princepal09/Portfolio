@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Download, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -10,6 +10,16 @@ const Header = () => {
   }
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const menuItems: IMenuItem[] = [
     { label: "About", href: "#about" },
@@ -19,8 +29,8 @@ const Header = () => {
     { label: "Contact", href: "#contact" },
   ];
   return (
-    <header className="fixed  p-5 top-0 right-0 left-0 z-50 transition-all duration-300">
-      <div className="container mx-auto px-4">
+    <header  className={`fixed  top-0 right-0 left-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-md border-b" : ""}`  }>
+      <div className="container py-5  mx-auto px-10">
         <div className="flex items-center justify-between">
           <Link to={"/"} className={"text-xl font-bold text-primary"}>
             Prince Pal
@@ -39,12 +49,12 @@ const Header = () => {
               </a>
             ))}
 
-            <Button asChild variant="default" size='lg' className="gap-2">
-                <a href="/PRINCE_RESUME.pdf" download>
-                  <Download className="w-4 h-4" />
-                  Resume
-                </a>
-              </Button>
+            <Button asChild variant="default" size="lg" className="gap-2">
+              <a href="/PRINCE_RESUME.pdf" download>
+                <Download className="w-4 h-4" />
+                Resume
+              </a>
+            </Button>
           </nav>
 
           {/* Mobile Menu Button  */}

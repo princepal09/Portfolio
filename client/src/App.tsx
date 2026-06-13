@@ -1,6 +1,7 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import './App.css'
+import Home from "./pages/Home";
 
 
 export const router = createBrowserRouter(
@@ -8,7 +9,7 @@ export const router = createBrowserRouter(
        <>
 
        <Route path="/" element = {<Layout/>} >
-         {/* <Route index element ={ <Home/>} /> */}
+         <Route index element ={ <Home/>} />
        </Route>
        
        </>
