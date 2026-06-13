@@ -20,7 +20,7 @@ const Skills = () => {
       {" "}
       
       {technologies?.map((tech: ITech, idx: number) => (
-        <Card key={idx} className="p-4 flex flex-col items-center border-1 justify-center hover:border-primary transition-colors" >
+        <Card key={idx} className="p-4 flex flex-col items-center border justify-center hover:border-primary transition-colors" >
          <img alt={tech?.name} src={tech?.logo} height={48} width={48} className="mb-2 pt-7" />
          <span className="text-sm font-medium">{tech?.name}</span>
         </Card>
