@@ -5,7 +5,7 @@ import { Card } from "../ui/card";
 const Skills = () => {
   return (
 
-    <section id="skills" className="container mx-auto px-4 py-20">
+    <section id="skills" className="container mx-auto px-10 py-10">
         <h2 className="text-3xl font-bold mb-12 text-center">
             <span className="text-primary">Skills</span> {" "}
             & Technologies
