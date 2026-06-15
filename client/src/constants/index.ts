@@ -105,7 +105,7 @@ export const projects:IProject[] = [
       "Cloudinary",
       "Redux"
     ],
-    liveUrl: "",
+    liveUrl: "https://study-notion-ruddy-six.vercel.app/",
     githubUrl: "https://github.com/princepal09/StudyNotion",
     features: [
       "Student and Instructor authentication",

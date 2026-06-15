@@ -1,4 +1,4 @@
-import { projects, technologies, type IProject } from "@/constants";
+import { projects, type IProject } from "@/constants";
 import { motion } from "framer-motion";
 import { Card } from "../ui/card";
 import {Check, ExternalLink } from "lucide-react";
