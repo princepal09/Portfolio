@@ -1,3 +1,4 @@
+import Contact from '@/components/Sections/Contact'
 import Github from '@/components/Sections/Github'
 import Hero from '@/components/Sections/Hero'
 import Projects from '@/components/Sections/Projects'
@@ -13,6 +14,7 @@ const Home = () => {
         <Testimonials/>
         <Projects/>
         <Github/>
+        <Contact/>
       
     </main>
   )

@@ -1,14 +1,9 @@
 import { useEffect, useState } from "react";
-import { Card } from "../ui/card";
+import { Card } from "./ui/card";
 import { Calendar, GitBranch, GitCommit, Star } from "lucide-react";
 import { motion } from "framer-motion";
 import axios from "axios";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "../ui/tooltip";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
 import { cn } from "@/lib/utils";
 
 interface GithubProps {
