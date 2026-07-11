@@ -10,9 +10,10 @@
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "moduleDetection": "force",
     "noEmit": true,
+    "noEmitOnError": true,
 
     /* Linting */
     "noUnusedLocals": true,
