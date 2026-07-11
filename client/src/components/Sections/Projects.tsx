@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 const Projects = () => {
   return (
-    <section className="container mx-auto px-10 py-10">
+    <section id="projects" className="container mx-auto px-10 py-10">
       <div className="text-center mb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -24,7 +24,7 @@ const Header = () => {
   const menuItems: IMenuItem[] = [
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
-    { label: "Project", href: "#project" },
+    { label: "Project", href: "#projects" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Contact", href: "#contact" },
   ];

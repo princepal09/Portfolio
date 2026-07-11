@@ -6,7 +6,7 @@ import { Card } from "../ui/card";
 import ContactForm from "../ContactForm";
 const Contact = () => {
   return (
-    <section className="container mx-auto px-10 py-10">
+    <section id="contact" className="container mx-auto px-10 py-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         <motion.div
           initial={{ opacity: 0, x: -20 }}

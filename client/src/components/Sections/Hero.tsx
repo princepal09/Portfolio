@@ -12,7 +12,7 @@ const Hero = () => {
 
   return (
 
-    <section className="container py-5 mx-auto px-10 pt-32 pb-20">
+    <section id='about' className="container py-5 mx-auto px-10 pt-32 pb-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <motion.div initial={{opacity : 0, x: -20}} animate = {{opacity : 1, x : 0}} transition={{duration : 0.5}} 
         >

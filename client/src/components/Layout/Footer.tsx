@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export function Footer() {
   return (
     <footer className="border-t bg-card">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-10 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <h3 className="text-xl font-bold text-primary mb-4">Prince Pal</h3>
@@ -83,7 +83,7 @@ export function Footer() {
             © {new Date().getFullYear()} Prince Pal. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-red-500" /> using Next.js
+            Thanks For<Heart className="w-4 h-4 text-red-500" />Visiting
           </p>
         </div>
       </div>
