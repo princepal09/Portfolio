@@ -1,5 +1,6 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
+import githubRoutes from "./routes/route";
 
 const app = express();
 
@@ -9,6 +10,7 @@ app.use(
     origin: "http://localhost:5173",
   }),
 );
+app.use('/api/v1', githubRoutes)
 
 app.get("/", (req: Request, res: Response) => {
   return res.json({

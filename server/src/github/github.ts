@@ -1,9 +1,12 @@
 import { Request, Response } from "express";
 import { Octokit } from "octokit";
+import dotenv from 'dotenv'
+dotenv.config();
 
 const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });
+
 
 interface ContributionDay {
   contributionCount: number;
@@ -30,7 +33,7 @@ export const getGitHubContributions = async (
   res: Response
 ): Promise<void> => {
   const { username } = req.query;
-
+  console.log(username)
   if (!username || typeof username !== "string") {
     res.status(400).json({
       error: "Username is required",
