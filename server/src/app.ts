@@ -1,13 +1,15 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
 import githubRoutes from "./routes/route";
+import dotenv from 'dotenv'
+dotenv.config()
 
 const app = express();
 
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin:process.env.CLIENT_URL,
   }),
 );
 app.use('/api/v1', githubRoutes)
@@ -20,3 +22,4 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 export default app;
+

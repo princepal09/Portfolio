@@ -1,3 +1,5 @@
+
+
 export interface ITech {
   name: string;
   logo: string;
@@ -22,12 +24,36 @@ export interface IProject {
 
 export const technologies: ITech[] = [
   {
-    name: "React",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    name: "HTML5",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  {
+    name: "CSS3",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  },
+  {
+    name: "JavaScript",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
     name: "TypeScript",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  },
+  {
+    name: "React",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    name: "Vite",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    name: "Redux Toolkit",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
   },
   {
     name: "Node.js",
@@ -36,14 +62,6 @@ export const technologies: ITech[] = [
   {
     name: "Express.js",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-  },
-  {
-    name: "Java",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-  },
-  {
-    name: "C++",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
   },
   {
     name: "PostgreSQL",
@@ -58,8 +76,16 @@ export const technologies: ITech[] = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
   {
-    name: "Redux",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+    name: "GitHub",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  },
+  {
+    name: "Java",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+  },
+  {
+    name: "C++",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
   },
 ];
 
@@ -142,4 +168,36 @@ export const projects:IProject[] = [
       "Trend analysis"
     ]
   }
+];
+
+
+export interface IExperience {
+  company: string;
+  role: string;
+  location: string;
+  duration: string;
+  description: string;
+  technologies: string[];
+  certificate?: string;
+}
+
+export const experiences: IExperience[] = [
+  {
+    company: "3Skills",
+    role: "Web Developer Intern",
+    location: "Remote",
+    duration: "Dec 5, 2025 - Feb 5, 2026",
+    description:
+      "Contributed to MERN stack applications by building responsive React interfaces, developing REST APIs with Node.js and Express.js, integrating MongoDB, and collaborating with the team using Git and GitHub.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JavaScript",
+      "Git",
+      "GitHub",
+    ],
+    certificate: "/Certificate_INTERN260102_Prince Pal.pdf", 
+  },
 ];
