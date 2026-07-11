@@ -23,11 +23,13 @@ const Hero = () => {
 
             <p className='text-xl md:text-2xl text-muted-foreground mb-8'>Full Stack Developer Crafting modern applications</p>
                  <div className='flex gap-4'>
-                        <Button variant={"default"} className='gap-2'>
+                  <Link to="mailto:princepal262501@gmail.com" target='_blank'>
+                        <Button   variant={"default"} className='gap-2'>
                             
                             <Mail className='w-4 h-4 ' />
                             Contact Me
                         </Button>
+                  </Link>
                          
                          <Link target='_blank' to={github_url}>
                          
