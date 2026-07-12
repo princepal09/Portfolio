@@ -121,7 +121,7 @@ export const projects:IProject[] = [
     description:
       "A fully functional EdTech platform that enables instructors to create and manage courses while allowing students to browse, purchase, and learn through an interactive learning experience.",
     image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
+      "/studynotion.png",
     technologies: [
       "React",
       "Node.js",
