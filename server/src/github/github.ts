@@ -7,7 +7,6 @@ const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });
 
-
 interface ContributionDay {
   contributionCount: number;
   date: string;
