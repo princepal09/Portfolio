@@ -1,5 +1,3 @@
-
-
 export interface ITech {
   name: string;
   logo: string;
@@ -89,7 +87,7 @@ export const technologies: ITech[] = [
   },
 ];
 
-export const testimonials : ITesti[] = [
+export const testimonials: ITesti[] = [
   {
     name: "Sarah Johnson",
     role: "CEO at TechStart",
@@ -113,8 +111,6 @@ export const testimonials : ITesti[] = [
   },
 ];
 
-
-
 export const projects: IProject[] = [
   {
     title: "StudyNotion",
@@ -128,7 +124,7 @@ export const projects: IProject[] = [
       "MongoDB",
       "Razorpay",
       "Cloudinary",
-      "Redux"
+      "Redux",
     ],
     liveUrl: "https://study-notion-ruddy-six.vercel.app/",
     githubUrl: "https://github.com/princepal09/StudyNotion",
@@ -136,13 +132,17 @@ export const projects: IProject[] = [
       "Student and Instructor authentication",
       "Course creation and management",
       "Secure course purchasing with Razorpay",
-      "Video-based learning experience"
-    ]
+      "Video-based learning experience",
+      "Cloud-based media storage with Cloudinary",
+      "Progress tracking and course enrollment",
+      "Role-based access control",
+      "Responsive and intuitive user interface",
+    ],
   },
   {
     title: "Banking Ledger API",
     description:
-  "A backend-first banking ledger API that simulates real-world account management, secure fund transfers, and idempotent transaction processing.",
+      "A backend-first banking ledger API that simulates real-world account management, secure fund transfers, and idempotent transaction processing.",
     image: "/banking-ledger.png",
     technologies: [
       "Node.js",
@@ -152,19 +152,20 @@ export const projects: IProject[] = [
       "JWT",
       "bcrypt",
       "Nodemailer",
-      "Render"
+      "Render",
     ],
-    liveUrl: "https://banking-ledger-eix1.onrender.com/", 
+    liveUrl: "https://banking-ledger-eix1.onrender.com/",
     githubUrl: "https://github.com/princepal09/Banking_Ledger",
     features: [
       "JWT-based authentication and authorization",
+      "Account creation and ledger management",
+      "Credit and debit transaction processing",
+      "Fund transfers with idempotency key support",
       "Secure password hashing using bcrypt",
-      "Account and transaction management APIs",
-      "Password reset using Nodemailer",
-      "RESTful API built with Express and MongoDB",
-      "Deployed on Render"
-    ]
-  }
+      "RESTful API built with Express.js and MongoDB",
+      "Deployed on Render",
+    ],
+  },
 ];
 
 export interface IExperience {
@@ -194,6 +195,6 @@ export const experiences: IExperience[] = [
       "Git",
       "GitHub",
     ],
-    certificate: "/Certificate_INTERN260102_Prince Pal.pdf", 
+    certificate: "/Certificate_INTERN260102_Prince Pal.pdf",
   },
 ];
