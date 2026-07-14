@@ -115,13 +115,12 @@ export const testimonials : ITesti[] = [
 
 
 
-export const projects:IProject[] = [
+export const projects: IProject[] = [
   {
     title: "StudyNotion",
     description:
       "A fully functional EdTech platform that enables instructors to create and manage courses while allowing students to browse, purchase, and learn through an interactive learning experience.",
-    image:
-      "/studynotion.png",
+    image: "/studynotion.png",
     technologies: [
       "React",
       "Node.js",
@@ -141,35 +140,32 @@ export const projects:IProject[] = [
     ]
   },
   {
-    title: "AI-Powered Task Manager",
-    description: "Smart task management application that uses AI to prioritize and categorize tasks, with team collaboration features.",
-    image: "https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?w=800&h=600&fit=crop",
-    technologies: ["React", "Node.js", "OpenAI", "MongoDB", "WebSocket"],
-    liveUrl: "https://taskmanager-demo.com",
-    githubUrl: "https://github.com/johndoe/taskmanager",
+    title: "Banking Ledger API",
+    description:
+  "A backend-first banking ledger API that simulates real-world account management, secure fund transfers, and idempotent transaction processing.",
+    image: "/banking-ledger.png",
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "bcrypt",
+      "Nodemailer",
+      "Render"
+    ],
+    liveUrl: "https://banking-ledger-eix1.onrender.com/", 
+    githubUrl: "https://github.com/princepal09/Banking_Ledger",
     features: [
-      "AI task prioritization",
-      "Real-time collaboration",
-      "Custom workflows",
-      "Analytics dashboard"
-    ]
-  },
-  {
-    title: "Social Media Analytics",
-    description: "Comprehensive social media analytics platform providing insights and engagement metrics across multiple platforms.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    technologies: ["Vue.js", "Python", "D3.js", "AWS", "Redis"],
-    liveUrl: "https://analytics-demo.com",
-    githubUrl: "https://github.com/johndoe/analytics",
-    features: [
-      "Cross-platform analytics",
-      "Custom report generation",
-      "Engagement tracking",
-      "Trend analysis"
+      "JWT-based authentication and authorization",
+      "Secure password hashing using bcrypt",
+      "Account and transaction management APIs",
+      "Password reset using Nodemailer",
+      "RESTful API built with Express and MongoDB",
+      "Deployed on Render"
     ]
   }
 ];
-
 
 export interface IExperience {
   company: string;
