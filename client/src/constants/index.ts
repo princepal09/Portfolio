@@ -140,6 +140,41 @@ export const projects: IProject[] = [
     ],
   },
   {
+    title: "Social Media App",
+    description:
+      "A full-stack real-time social media application that enables users to connect, share content, interact with posts, and communicate through real-time features with secure and scalable backend architecture.",
+
+    image: "/socialmediaapp.png",
+
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.IO",
+      "JWT",
+      "Cloudinary",
+      "Rate Limiting",
+      "Caching",
+    ],
+
+    liveUrl: "https://social-media-app-tan-three.vercel.app/",
+    githubUrl: "https://github.com/princepal09/SocialMediaApp",
+
+    features: [
+      "Secure user authentication and authorization using JWT",
+      "Real-time communication and updates powered by Socket.IO",
+      "User profile creation and management",
+      "Create, update, and delete posts",
+      "Like, comment, and interact with posts",
+      "Connect and interact with other users",
+      "API rate limiting for improved security and abuse prevention",
+      "Caching for faster response times and improved performance",
+      "Cloud-based media and image storage",
+      "Responsive and modern user interface",
+    ],
+  },
+  {
     title: "Banking Ledger API",
     description:
       "A backend-first banking ledger API that simulates real-world account management, secure fund transfers, and idempotent transaction processing.",
